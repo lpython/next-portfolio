@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 
 export default class About extends Component {
   static async getInitialProps() {
-    const res = await fetch("https://api.github.com/users/lpython2");
+    const res = await fetch("https://api.github.com/users/lpython");
     const statusCode = res.status > 200 ? res.status : false;
     const data = await res.json();
 
